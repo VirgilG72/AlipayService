@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.os.RemoteException;
 
-public class AliService extends Service {
+    public class AliService extends Service {
     public AliService() {
     }
 
@@ -31,6 +31,7 @@ public class AliService extends Service {
         public int callSafepay(String username, String password, float money, long timestamp) throws RemoteException {
             return safepay(username, password,money, timestamp);
         }
+
 
     }
 

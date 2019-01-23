@@ -3,6 +3,7 @@
           package="com.example.a61979.alipayservice">
 
     <application
+        android:name=".AlipayApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -19,8 +20,11 @@
 
         <service
             android:name=".AliService"
-            android:enabled="true"
-            android:exported="true">
+            >
+            <intent-filter>
+                <action android:name="com.example.a61979.alipayservice.AliService"></action>
+            </intent-filter>
+
         </service>
     </application>
 
